@@ -1,32 +1,40 @@
 const Koa = require('koa');
+const Router = require('koa-router');
+const bodyParser = require('koa-bodyparser');
+
 const app = new Koa();
+const router = Router();
 
-app.use(async (ctx, next) => {
-    const st = new Date().getTime();
-    await next();
-    const et = new Date().getTime();
-    ctx.response.type = 'text/html';
-    ctx.response.body = '<h1>Hello world!</h1>';
-    console.log(`请求地址：${ctx.path}, 相应时间: ${et - st}`);
+app.use(bodyParser());
+
+// 添加路由
+router.get('/home/:id/:name', async (ctx) => {
+    console.log(ctx.params);
+    ctx.response.body = 'Home';
 });
 
-app.use(async (ctx, next) => {
-    console.log('中间件1，do something');
-    await next();
-    console.log('中间件1 end');
+router.get('/login', async (ctx) => {
+    ctx.response.body = `
+    <form action="/user/login" method="post">
+        <input name="name" type="text" placeholder="请输入姓名，gaoweijung" />
+        <br />
+        <input name="password" type="text" placeholder="请输入密码，1204" />
+        <br />
+        <button>let's rush !!!!B</button>
+    </form>
+    `;
 });
 
-app.use(async (ctx, next) => {
-    console.log('中间件2，do something');
-    await next();
-    console.log('中间件2 end');
+router.post('/user/login', async (ctx) => {
+    let { name, password } = ctx.request.body;
+    if (name === 'gaoweijung' && password === '1204') {
+        ctx.response.body = `hello, ${name}`;
+    } else {
+        ctx.response.body = '账号密码信息错误';
+    }
 });
 
-app.use(async (ctx, next) => {
-    console.log('中间件3，do something');
-    await next();
-    console.log('中间件3 end');
-});
+app.use(router.routes());
 
 app.listen(3000, () => {
     console.log('Server is running at http://localhost:3000');
