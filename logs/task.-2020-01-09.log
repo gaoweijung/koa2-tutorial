@@ -1,0 +1,10 @@
+[2020-01-09T09:46:51.347] [INFO] cheese - 相应时间为0.002
+[2020-01-09T10:06:10.861] [INFO] cheese - 相应时间为0.002
+[2020-01-09T10:06:37.143] [INFO] cheese - 响应时间为0.002
+[2020-01-09T10:06:45.180] [INFO] cheese - 响应时间为0.002s
+[2020-01-09T10:26:39.750] [INFO] cheese - {"projectName":"koa-tutorial","serverIP":"0.0.0.0","method":"GET","url":"/","host":"localhost:3000","message":{"responseTime":"响应时间为0.002s"},"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36"}
+[2020-01-09T10:26:39.907] [INFO] cheese - {"projectName":"koa-tutorial","serverIP":"0.0.0.0","method":"GET","url":"/","host":"localhost:3000","message":{"responseTime":"响应时间为0.001s"},"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36"}
+[2020-01-09T11:06:08.023] [INFO] cheese - {"projectName":"koa-tutorial","serverIP":"0.0.0.0","method":"GET","url":"/","host":"localhost:3000","message":{"responseTime":"响应时间为0.002s"},"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36"}
+[2020-01-09T11:06:48.245] [INFO] cheese - {"projectName":"koa-tutorial","serverIP":"0.0.0.0","method":"GET","url":"/nihao","host":"localhost:3000","message":{"responseTime":"响应时间为0.001s"},"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36"}
+[2020-01-09T11:07:24.170] [INFO] cheese - {"projectName":"koa-tutorial","serverIP":"0.0.0.0","method":"GET","url":"/nihao","host":"localhost:3000","message":{"responseTime":"响应时间为0s"},"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36"}
+[2020-01-09T11:09:10.972] [INFO] cheese - {"projectName":"koa-tutorial","serverIP":"192.168.1.159","method":"GET","url":"/nihao","host":"localhost:3000","message":{"responseTime":"响应时间为0.001s"},"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36"}
